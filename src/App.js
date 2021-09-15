@@ -64,6 +64,8 @@ export default function App() {
 
     if (userInput in emojiDictionary) {
       setMeaning(emojiDictionary[userInput]);
+    } else if (userInput === "") {
+      setMeaning("");
     } else {
       setMeaning("That's a new one! We don't have it in our database");
     }
